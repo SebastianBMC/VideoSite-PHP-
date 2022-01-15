@@ -1,0 +1,360 @@
+html,
+body
+{   
+    
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
+*
+{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.category h3
+{
+    color: #333;
+
+}
+
+a h3:hover
+{
+    color: black;
+}
+
+a
+{
+    text-decoration: none;
+}
+.wrapper
+{
+    min-width: 1050px;
+    min-height: 1050px;
+    background-color: #f1eeee;
+}
+.signInContainer
+{
+    background-color: rgb(48, 48, 177);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.column
+{
+    background-color: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 2px;
+    border-radius: 8px;
+    padding:  20px 35px;
+    overflow-y: auto;
+}
+.column form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"]
+{
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+}
+.column form input[type="submit"]
+{
+    background-color: rgb(49, 49, 179);
+    color: white;
+    height: 35px;
+    width: 88px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    
+}
+.column .header
+{
+    padding: 20px 0;
+}
+.column .header h3
+{
+    font-size: 26px;
+    font-weight: 520;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    color: black;
+}
+.column .header span
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333
+}
+.column .header img
+{
+    width: 150px;
+}
+.errorMessage
+{
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.previewImage, .previewVideo
+{
+    width: 100%;
+}
+.previewContainer
+{
+    position: relative;
+    display: flex;
+}
+
+.previewOverlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+
+}
+ .mainDetails 
+{
+    color:#fff;
+    font-size: 40px;
+    margin: 15px 0px;
+    position: relative;
+    top: 35%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDetails button
+{
+    background-color: rgba(51, 51, 51, 0.4);
+    color: #fff;
+    border: none;
+    min-width: 150px;
+    padding: 0 38px;
+    height: 50px;
+    max-height: 50px;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+
+.mainDetails button i
+{
+    color:inherit
+}
+
+.mainDetails button:hover
+{
+    background-color: #e6e6e6;
+    color: black;
+
+}
+.previewContainer.small
+{
+    width: 230px;
+    height: 129px;
+    margin-right: 4px;
+    display: inline-flex;
+}
+.previewContainer.small img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.entities
+{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.previewCategories
+{
+    padding: 0 50px;
+}
+
+.watchContainer video
+{
+    width: 100%;
+}
+.videoControls
+{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.videoControls h1
+{
+    
+    color: #fff;
+}
+
+.videoControls button
+{
+    
+    font-size: 50px;
+    padding: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+.topBar
+{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    height: 70px;
+    box-sizing: border-box;
+    min-width: 1050px;
+    transition: background-color 200ms linear;
+
+}
+
+.topBar.scrolled
+{
+    background-color: #f1eeee;
+    transition: background-color 200ms linear;
+
+}
+.topBar.scrolled a i
+{
+    color:#141414;
+}
+.topBar.scrolled a 
+{
+    color:#141414;
+}
+.logoContainer
+{
+    height: 40px;
+}
+.logoContainer a img
+{
+    height: 100%;
+}
+.navLinks
+{
+    display: flex;
+    list-style: none;
+    
+
+}
+.navLinks a
+{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.navLinks.scrolled 
+{
+   color: #141414;
+}
+
+.rightItems
+{
+    flex: 1;
+    text-align: right;
+
+}
+
+.rightItems i 
+{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.settingsContainer
+{
+    padding-top: 100px;
+    background-color: transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+}
+
+.formSection
+{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+.settingsContainer form input[type="text"],
+.settingsContainer form input[type="email"],
+.settingsContainer form input[type="password"]
+{
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.settingsContainer form input[type="submit"]
+{
+    background-color:rgb(48, 48, 177);
+    width: 100px;
+    height: 40px;
+}
+.alertSuccess,
+.alertError
+{
+    margin: 10px 0;
+
+}
+.alertError
+{
+    color: red;
+}
+.alertSuccess
+{
+    color: green;
+}
+
+
